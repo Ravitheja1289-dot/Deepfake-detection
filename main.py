@@ -52,7 +52,7 @@ def detect_deepfake(video_path):
     # Compute average deepfake probability
     avg_fake_score = np.mean(deepfake_probabilities) if deepfake_probabilities else 0
     print(f"\nOverall Deepfake Probability: {avg_fake_score:.4f}")
-    if avg_fake_score > 0.5:  # Threshold for deepfake detection
+    if avg_fake_score > 0.51:  # Threshold for deepfake detection
         print("Deepfake detected!")
     else:
         print("No deepfake detected.")
